@@ -7,7 +7,6 @@
 
 body{
     background-image: url(./images/background2.png);
-   
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@ main{
 main .categorias{
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top:50px;
     height: 200px;
 }
 
@@ -105,6 +104,7 @@ main .categorias .opcao .spans p{
     height: 300px;
     display: flex;
     flex-direction: column;
+    margin-top: -10px;
 }
 
 .destaques h3{
@@ -118,8 +118,39 @@ main .categorias .opcao .spans p{
     border-radius: 10px;
     background-color: #d2d2d2;
     margin: 20px 0px 0px 15px;
+    position: relative;
+    overflow: hidden;
 }
 
+.destaques .container .carrossel{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.destaques .container .carrossel img{
+    width: 314px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.destaques .container .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
 
 /*-------------------*/
 
@@ -144,7 +175,7 @@ main .ajuda h3{
 main .ajuda .opcoes{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 30px 15px;
 }
 
 
@@ -165,7 +196,7 @@ main .ajuda .opcoes span{
 footer{
     background-color: #ffffff;
     position: sticky;
-    height: 70px;
+    height: 80px;
     bottom: 0;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
