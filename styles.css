@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(./images/background2.png);
+   
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+
+header .head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 60px;
+}
+
+header .head h1{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+/*--------MAIN CATEGORIAS---------*/
+
+main{
+    flex: 1;
+}
+main .categorias{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    height: 200px;
+}
+
+main .categorias h3{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+main .opcao{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+main .categorias .opcao .spans span{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+main .categorias .opcao .spans #span1{
+    background-color: #FFB200;
+}
+
+main .categorias .opcao .spans #span2{
+    background-color: #EB5B00;
+}
+
+main .categorias .opcao .spans #span3{
+    background-color: #D91656;
+}
+
+main .categorias .opcao .spans #span4{
+    background-color: #640D5F;
+}
+
+main .categorias .opcao .spans{
+    text-align: center;
+    
+}
+
+main .categorias .opcao .spans p{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/*--------------------------*/
+
+
+.destaques{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.destaques h3{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.destaques .container{
+    width: 314px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #d2d2d2;
+    margin: 20px 0px 0px 15px;
+}
+
+
+/*-------------------*/
+
+
+/*-------------------*/
+
+main .ajuda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 200px;
+}
+
+main .ajuda h3{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+
+main .ajuda .opcoes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+main .ajuda .opcoes span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    background-color: #d2d2d2;
+
+}
+
+/*--------------------*/
+footer{
+    background-color: #ffffff;
+    position: sticky;
+    height: 70px;
+    bottom: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer .nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 80px;
+    
+}
+
+footer .nav p{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 5px;
+}
