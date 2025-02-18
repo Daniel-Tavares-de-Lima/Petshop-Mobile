@@ -1,4 +1,5 @@
 # Petshop-Mobile
+## Para execução do projeto entre no modo responsível do navegador e escolha o smartphone Galaxy Z Fold 5
 ## Um app mobile para reunir informações sobre ongs de doação e resgates, voluntários, blog, entre outros tudo relacionado a Pets
 
 - Uma aplicação web responsiva utilizando HTML + CSS + Javascript. Você pode utilizar bibliotecas para lhe ajudar neste processo de desenvolvimento.
