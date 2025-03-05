@@ -9,7 +9,11 @@
 
     <link rel="stylesheet" href="./styles.css">
 
+    <link rel="stylesheet" href="./mediaStyles.css">
+
     <link rel="stylesheet" href="./fonts/styles.css">
+
+    <link rel="manifest" href="manifest.json">
 
     <script src="./script.js"></script>
 </head>
@@ -18,7 +22,6 @@
     <header>
         <div class="head">
             <h1>Petshop</h1>
-
             <i class="fa-regular fa-bell" style="font-size: 20px;"></i>
         </div>
     </header>
@@ -71,10 +74,10 @@
             <div class="container">
 
                 <div class="carrossel">
-                    <img src="./images/Carrossel/Banner colorido e divertido para campanha de adoção de animais.png" alt="Anuncio">
-                    <img src="./images/Carrossel/Banner para pet shop divertido e moderno em gradiente preto e verde.png" alt="Anuncio">
-                    <img src="./images/Carrossel/Banner Petshop Banho e Tosa Profissional Azul.png" alt="Anuncio">
-                    <img src="./images/Carrossel/Miniatura youtube de páscoa pet divertido azul e vermelho.png" alt="Anuncio">
+                    <img src="./images/iloveimg-compressed/Banner colorido e divertido para campanha de adoção de animais.png" alt="Anuncio">
+                    <img src="./images/iloveimg-compressed/Banner para pet shop divertido e moderno em gradiente preto e verde.png" alt="Anuncio">
+                    <img src="./images/iloveimg-compressed/Banner Petshop Banho e Tosa Profissional Azul.png" alt="Anuncio">
+                    <img src="./images/iloveimg-compressed/Miniatura youtube de páscoa pet divertido azul e vermelho.png" alt="Anuncio">
                 </div>
 
                 <button  id="esq" class="prev" onclick="prevSlide()">&#10094;</button>
@@ -126,39 +129,20 @@
 
     <footer>
         <div class="nav">
-
-            <div class="home">
-                <span>
-                    <i class="fa-solid fa-house" style="color: #FFB200;"></i>
-                </span>
-
-                <p style="color: #FFB200;">Home</p>
-            </div>
-
-            <div class="voluntarios">
-                <span>
-                    <i class="fa-solid fa-handshake-angle"></i>
-                </span>
-
-                <p>Voluntários</p>
-            </div>
-
-            <div class="videos">
-                <span>
-                    <i class="fa-solid fa-play"></i>
-                </span>
-
-                <p>Vídeos</p>
-            </div>
-
-            <div class="perfil">
-                <span>
-                    <i class="fa-solid fa-user"></i>
-                </span>
-
-                <p>Usuário</p>
-            </div>
+            <div class="home"><i class="fa-solid fa-house" style="color: #FFB200;"></i><p>Home</p></div>
+            <div class="voluntarios"><i class="fa-solid fa-handshake-angle"></i><p>Voluntários</p></div>
+            <div class="videos"><i class="fa-solid fa-play"></i><p>Vídeos</p></div>
+            <div class="perfil"><i class="fa-solid fa-user"></i><p>Usuário</p></div>
         </div>
     </footer>
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('Service Worker registrado!', reg))
+            .catch(err => console.log('Erro ao registrar o Service Worker', err));
+        }
+    </script>
 </body>
 </html>

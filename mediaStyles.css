@@ -1,0 +1,26 @@
+@media(min-width:500px){
+    .destaques .container{
+        width: 514px;
+        height: 200px;
+
+    }
+
+    .destaques .container .carrossel img{
+        width: 514px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .destaques .container {
+        width: 700px;
+        height: 300px;
+    }
+
+    .destaques .container .carrossel img {
+        width: 700px;
+        height: 300px;
+    }
+}
